@@ -64,6 +64,5 @@ document.addEventListener("DOMContentLoaded", () => {
         duration: 0.7,
         delay: -0.6,
         height: 0,
-        // width: 0,
     });
 });
