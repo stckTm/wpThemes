@@ -13,12 +13,76 @@
         aspect-ratio: 4/3;
         background: gray;
         z-index: 10;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
     }
 
     &__wrapper {
         width: 150%;
         height: 100%;
         position: relative;
+
+        .lamp {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 100px;
+            // background-color: gray;
+            z-index: 10;
+            text-align: center;
+
+            &__line {
+                background-color: $cCream;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 25%;
+                width: 2px;
+            }
+
+            &__triangle {
+                background-color: $cCream;
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 55%;
+                clip-path: polygon(0 100%, 50% 0, 100% 100%);
+            }
+
+            &__light {
+                background-color: $cYellow;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                transform: translate(-50%);
+                width: 60%;
+                height: 20%;
+
+                border-radius: 0 0 50% 50% /0 0 100% 100%;
+            }
+        }
+
+        .lightSpot {
+            width: 100%;
+            height: 100%;
+            background-color: $cCream;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 60px;
+            clip-path: polygon(0% 100%, 0% 50%, 50% 0%, 100% 50%, 100% 100%);
+            z-index: 5;
+        }
     }
 
     &__mask {
@@ -28,23 +92,4 @@
         background-color: $cGray;
         z-index: 2;
     }
-
-    .light {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 10;
-    }
-    .triangle {
-        width: 100%;
-        height: 100%;
-        background-color: $cCream;
-        position: absolute;
-        left: 0;
-        top: 0;
-        clip-path: polygon(0% 100%, 0% 60%, 50% 15%, 100% 60%, 100% 100%);
-        z-index: 5;
-    }
-
 }
