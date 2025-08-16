@@ -30,7 +30,6 @@
 })(document);
 
 //hero-animation
-
 document.addEventListener("DOMContentLoaded", () => {
     const heroAnimate = gsap.timeline();
     gsap.from(".lamp__line", {
@@ -65,4 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
         delay: -0.6,
         height: 0,
     });
+
+    const tvChange = gsap.timeline({ repeat: -1 });
+    tvChange.to('.tv img', {
+        opacity: 1,
+        duration: 0,
+        stagger: 0.07,
+    })
 });

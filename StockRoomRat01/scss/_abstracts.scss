@@ -3,3 +3,25 @@ $cCream : #fbfaf5;
 $cYellow: #ffbe00;
 $cWhite: #ffffff;
 $cGray: #b7b7b7;
+
+//keyframes
+@keyframes tv-change{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}

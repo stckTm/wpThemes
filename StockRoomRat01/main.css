@@ -1,3 +1,23 @@
+@keyframes tv-change {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   font-family: kobenhavn-sans-stencil, source-han-serif-variable, sans-serif;
   background-color: #fbfaf5;
@@ -25,11 +45,13 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+  opacity: 0;
 }
 .hero__wrapper {
   width: 150%;
   height: 100%;
   position: relative;
+  left: 0;
 }
 .hero__wrapper .lamp {
   position: absolute;

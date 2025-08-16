@@ -19,6 +19,7 @@
             height: 100%;
             object-fit: cover;
             position: absolute;
+            opacity: 0;
         }
     }
 
@@ -26,6 +27,7 @@
         width: 150%;
         height: 100%;
         position: relative;
+        left: 0;
 
         .lamp {
             position: absolute;
