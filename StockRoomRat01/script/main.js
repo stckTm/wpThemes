@@ -72,12 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   const tv = document.querySelector(".tv");
-//   window.addEventListener("scroll", () => {
-//     let scrollTop = window.scrollY || document.documentElement.scrollTop
-//     let scaleValue = (100 + scrollTop / 10) / 50
+  const hero = document.querySelector('.hero__wrapper');
+  console.log(hero);
+  window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop
+    let scaleValue = (100 + scrollTop / 10) / 50
 
-//     tv.style.transform = `scale(${scaleValue})`
-//   });
+    tv.style.transform = `translate(-50%, -50%) scale(${scaleValue})`;
+    hero.style.top = `${scrollTop}px`;
+    console.log(scrollTop);
+    console.log(hero.style.top);
+  });
 
 // functon calcMaxScale() {
 //     const rect = 
