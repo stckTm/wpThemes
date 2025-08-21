@@ -103,22 +103,17 @@
 }
 
 .nextArea {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 500;
-height: 100vh;
-
-
-
-    .area1 {
-      height: 100vh;
-      background-color: red;
-      position: relative;
-  }
-  
-  .area2 {
-      height: 100vh;
-      background: $cYellow;
-      position: relative;
-  }
+    height: 100vh;
+    background: rgba(255, 255, 255);
 }
 
+.nextArea2 {
+    position: sticky;
+    top: 10vh;
+    z-index: 500;
+    height: 90vh;
+    background: rgba(76, 57, 57, 0.6);
+}

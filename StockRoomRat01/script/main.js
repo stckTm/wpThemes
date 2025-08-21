@@ -99,7 +99,7 @@ function runHeroAnimation() {
     });
 
     function updateOnScroll() {
-        const scale = (100 + lastScrollY / 10) / 100;
+        const scale = (100 + lastScrollY / 10) / 50;
         tvElement.style.transform = `translate(-50%, -50%) scale(${scale})`;
         ticking = false;
     }
